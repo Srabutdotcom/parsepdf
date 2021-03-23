@@ -1,5 +1,5 @@
 const pdfjs = require("pdfjs-dist");
-
+debugger;
 pdfjs.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.worker.js";
 const parsepdf = require('./library/parsepdf.js');
 

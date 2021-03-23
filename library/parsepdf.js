@@ -1,5 +1,5 @@
-const inspectcouple =require('inspectcouple.js');
-const relocatecell =require('relocatecell.js');
+const inspectcouple =require('./inspectcouple.js');
+const relocatecell =require('./relocatecell.js');
 
 function parsepdf(text){
   var items;
