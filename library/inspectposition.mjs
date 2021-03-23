@@ -1,4 +1,4 @@
-export function inspectposition(data,parent,yr,xr,rmax){
+function inspectposition(data,parent,yr,xr,rmax){
   //cell position are determined by its x and t position within yr and xr range
   if(!parent.length){console.log('parent has no child');return {c:0, r:0}}
   let {x,t,str} = data;
@@ -34,3 +34,5 @@ export function inspectposition(data,parent,yr,xr,rmax){
   //debugger;
   return {c:c, r:r }                     
 }
+
+export {inspectposition}

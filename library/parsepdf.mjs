@@ -1,7 +1,7 @@
 import {inspectcouple} from 'inspectcouple.mjs';
 import {relocatecell} from 'relocatecell.mjs';
 
-export function parsepdf(text){
+function parsepdf(text){
   var items;
   var parent = [];
   var child = [];
@@ -24,3 +24,5 @@ export function parsepdf(text){
   
   return parent;
 }
+
+export { parsepdf }

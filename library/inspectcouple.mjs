@@ -1,6 +1,6 @@
 import {pushtoparent} from 'pushtoparent.mjs';
 
-export function inspectcouple(pair,parent,row,col,rmax){
+function inspectcouple(pair,parent,row,col,rmax){
   var str='';
   var width=0;
   if(pair.length<2){console.log('pair less than 2');return;}
@@ -39,3 +39,5 @@ export function inspectcouple(pair,parent,row,col,rmax){
     return pushtoparent(pair,parent,row,col,rmax);
   }
 }
+
+export {inspectcouple}

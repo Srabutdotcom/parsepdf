@@ -1,4 +1,4 @@
-export function relocatecell(parent,col){
+function relocatecell(parent,col){
   let colsize = col.length;
   let r = 0;
   let c = 0;
@@ -24,3 +24,5 @@ export function relocatecell(parent,col){
   }
 
 }
+
+export {relocatecell}

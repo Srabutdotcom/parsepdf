@@ -1,7 +1,7 @@
 import {updaterowcolrange} from 'updaterowcolrange.mjs';
 import {inspectposition} from 'inspectposition.mjs';
 
-export function pushtoparent(pair,parent,row,col,rmax){
+function pushtoparent(pair,parent,row,col,rmax){
   let status=''
   if(pair[0].str===' '){console.log('empty string');pair.shift();return status='empty';} 
   let data = {...pair[0]}//spread the value from reference variable into data
@@ -28,3 +28,5 @@ export function pushtoparent(pair,parent,row,col,rmax){
   updaterowcolrange(data, parent, row, col, {r:r,c:c},rmax);
   return status;
 }
+
+export {pushtoparent}
