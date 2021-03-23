@@ -1,0 +1,11 @@
+{
+  "name": "parsepdf",
+  "version": "1.0.0",
+  "description": "parse text from pdf to csv format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "binarmaya",
+  "license": "ISC"
+}
