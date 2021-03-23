@@ -6,9 +6,10 @@ const parsepdf = require('./library/parsepdf.js');
 async function loadPdf(pdfUrl,pageNum,pdfjs){
 	// Asynchronous download of PDF
 	let loadingTask = await pdfjs.getDocument(pdfUrl);
+	let parsePdf = await parsepdf;
 	loadingTask.promise.then(function(pdf) {
 		pdf.getPage(pageNum).then(function(page) {
-			page.getTextContent().then(await parsepdf);
+			page.getTextContent().then(parsePdf);
 		})
 	}, function (reason) {
     // PDF loading error
