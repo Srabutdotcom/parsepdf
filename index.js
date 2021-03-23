@@ -1,9 +1,9 @@
-const pdfjs = require("pdfjs-dist");
-debugger;
-pdfjs.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.worker.js";
+//const pdfjs = require("pdfjs-dist");
+//debugger;
+//pdfjs.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.worker.js";
 const parsepdf = require('./library/parsepdf.js');
 
-async function loadPdf(pdfUrl,pageNum){
+async function loadPdf(pdfUrl,pageNum,pdfjs){
 	// Asynchronous download of PDF
 	let loadingTask = await pdfjs.getDocument(pdfUrl);
 	loadingTask.promise.then(function(pdf) {
