@@ -1,4 +1,4 @@
-const pushtoparent =require('pushtoparent.js');
+const pushtoparent =require('./pushtoparent.js');
 
 function inspectcouple(pair,parent,row,col,rmax){
   var str='';
