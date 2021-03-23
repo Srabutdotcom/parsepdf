@@ -1,5 +1,5 @@
 {
-  "name": "parsepdf",
+  "name": "@binarmaya/parsepdf",
   "version": "1.0.0",
   "description": "parse text from pdf to csv format",
   "main": "index.js",
