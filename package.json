@@ -2,7 +2,7 @@
   "name": "@binarmaya/parsepdf",
   "version": "1.0.1",
   "description": "parse text from pdf to csv format",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

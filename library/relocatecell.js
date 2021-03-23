@@ -25,4 +25,4 @@ function relocatecell(parent,col){
 
 }
 
-export {relocatecell}
+module.exports = relocatecell

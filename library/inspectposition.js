@@ -35,4 +35,4 @@ function inspectposition(data,parent,yr,xr,rmax){
   return {c:c, r:r }                     
 }
 
-export {inspectposition}
+module.exports =inspectposition

@@ -1,5 +1,5 @@
-import {inspectcouple} from 'inspectcouple.mjs';
-import {relocatecell} from 'relocatecell.mjs';
+const inspectcouple =require('inspectcouple.js');
+const relocatecell =require('relocatecell.js');
 
 function parsepdf(text){
   var items;
@@ -25,4 +25,4 @@ function parsepdf(text){
   return parent;
 }
 
-export { parsepdf }
+module.exports = parsepdf 

@@ -1,5 +1,5 @@
-import {updaterowcolrange} from 'updaterowcolrange.mjs';
-import {inspectposition} from 'inspectposition.mjs';
+const updaterowcolrange =require('updaterowcolrange.js');
+const inspectposition =require('inspectposition.js');
 
 function pushtoparent(pair,parent,row,col,rmax){
   let status=''
@@ -29,4 +29,4 @@ function pushtoparent(pair,parent,row,col,rmax){
   return status;
 }
 
-export {pushtoparent}
+module.exports =pushtoparent
