@@ -8,7 +8,7 @@ async function loadPdf(pdfUrl,pageNum,pdfjs){
 	let loadingTask = await pdfjs.getDocument(pdfUrl);
 	loadingTask.promise.then(function(pdf) {
 		pdf.getPage(pageNum).then(function(page) {
-			page.getTextContent().then(parsepdf);
+			page.getTextContent().then(await parsepdf);
 		})
 	}, function (reason) {
     // PDF loading error
