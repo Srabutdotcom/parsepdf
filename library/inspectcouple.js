@@ -1,4 +1,5 @@
-const pushtoparent =require('./pushtoparent.js');
+//const pushtoparent =require('./pushtoparent.js');
+import {pushtoparent} from './pushtoparent.js';
 
 function inspectcouple(pair,parent,row,col,rmax){
   var str='';
@@ -40,4 +41,5 @@ function inspectcouple(pair,parent,row,col,rmax){
   }
 }
 
-module.exports = inspectcouple
+//module.exports = inspectcouple
+export {inspectcouple} 

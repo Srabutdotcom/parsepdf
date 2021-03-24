@@ -1,11 +1,12 @@
 {
   "name": "@binarmaya/parsepdf",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "parse text from pdf to csv format",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+	"type":"module",
   "author": "binarmaya",
   "license": "ISC"
 }

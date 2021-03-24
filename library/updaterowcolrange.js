@@ -26,4 +26,5 @@ function updaterowcolrange(data, parent, row, col, obj,rmax){
     
 }
 
-module.exports = updaterowcolrange
+//module.exports = updaterowcolrange
+export {updaterowcolrange}
