@@ -11,7 +11,9 @@ async function loadPdf(pdfUrl,pageNum,pdfjs){
 	debugger;
 	loadingTask.promise.then(function(pdf) {
 		pdf.getPage(pageNum).then(function(page) {
-			page.getTextContent().then(parsePdf);
+			page.getTextContent().then(parsePdf).then(function(output){
+				return output
+			});
 		})
 	}, function (reason) {
     // PDF loading error
