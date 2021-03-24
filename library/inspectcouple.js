@@ -1,6 +1,24 @@
 //const pushtoparent =require('./pushtoparent.js');
 import {pushtoparent} from './pushtoparent.js';
 
+function _getY(item) {
+  // scaleX, scale01, scale10, scaleY, x, y
+  if (item && Array.isArray(item.transform)) {
+    return item.transform[5] || -1;
+  }
+
+  return -1;
+}
+
+function _getX(item) {
+  // scaleX, scale01, scale10, scaleY, x, y
+  if (item && Array.isArray(item.transform)) {
+    return item.transform[4] || -1;
+  }
+
+  return -1;
+}
+
 function inspectcouple(pair,parent,row,col,rmax){
   var str='';
   var width=0;
